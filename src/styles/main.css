@@ -1,0 +1,136 @@
+.dcollapse-toggle-container {
+  border: 1px solid;
+}
+
+.dpopup-container {
+  background: white;
+  border-radius: 10px;
+}
+.dpopup-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+.dpopup-body {
+  padding: 1.25rem;
+}
+
+.dtooltip-wrapper {
+  position: relative;
+}
+
+.dtooltip {
+  background: #555;
+  color: white;
+  position: fixed;
+  transition: opacity 300ms;
+  padding: 1rem;
+  border-radius: 10px;
+  text-overflow: wrap;
+}
+
+.dtooltip:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.dtooltip.tooltip-top:after {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.dtooltip.tooltip-top-left:after {
+  top: 100%;
+  left: 100%;
+  margin-left: -15px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.dtooltip.tooltip-top-right:after {
+  top: 100%;
+  left: 0%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.dtooltip.tooltip-right:after {
+  top: 50%;
+  left: 0%;
+  margin-left: -10px;
+  margin-top: -5px;
+  border-style: solid;
+  border-color: transparent #555 transparent transparent;
+}
+
+.dtooltip.tooltip-bottom:after {
+  top: 0%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.dtooltip.tooltip-bottom-right:after {
+  top: 0%;
+  left: 0%;
+  margin-left: 5px;
+  margin-top: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.dtooltip.tooltip-bottom-left:after {
+  top: 0%;
+  left: 100%;
+  margin-left: -15px;
+  margin-top: -10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #555 transparent;
+}
+
+.dtooltip.tooltip-left:after {
+  top: 50%;
+  left: 100%;
+  margin-left: -1px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #555;
+}
+
+.clickable-grey {
+  color: grey !important;
+  cursor: pointer !important;
+}
+
+.clickable-grey:hover {
+  color: black !important;
+}
+
+.clickable-black {
+  color: black !important;
+  cursor: pointer !important;
+}
+
+.clickable-black:hover {
+  color: grey !important;
+}

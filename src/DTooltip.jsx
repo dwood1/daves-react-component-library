@@ -30,7 +30,7 @@ const DTooltip = (props) => {
     <>
       <div
         id={id}
-        className={`position-relative ${className ? className : ""}`}
+        className={`dtooltip-wrapper ${className ? className : ""}`}
         style={{ cursor: "pointer", userSelect: "none", ...wrapperStyle }}>
         <div
           id={tooltipWrapperId}
@@ -43,7 +43,7 @@ const DTooltip = (props) => {
       {reactDom.createPortal(
         <div
           id={tooltipId}
-          className={`rounded text-wrap dtooltip ${tooltipHelperClass} ${
+          className={`dtooltip ${tooltipHelperClass} ${
             tooltipClass ? tooltipClass : ""
           }`}
           style={{

@@ -1,7 +1,86 @@
 {
-  "devDependencies": {
+  "name": "@dwood1/daves-react-component-library",
+  "description": "A simple and extensible react component library",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "version": "1.0.0",
+  "dependencies": {
+    "aggregate-error": "^3.1.0",
+    "array-union": "^2.1.0",
+    "clean-stack": "^2.2.0",
+    "braces": "^3.0.2",
+    "concat-map": "^0.0.1",
+    "dir-glob": "^3.0.1",
+    "brace-expansion": "^1.1.11",
+    "del": "^5.1.0",
+    "fill-range": "^7.0.1",
+    "fs.realpath": "^1.0.0",
+    "fastq": "^1.11.1",
+    "balanced-match": "^1.0.2",
+    "globby": "^10.0.2",
+    "indent-string": "^4.0.0",
+    "graceful-fs": "^4.2.6",
+    "inherits": "^2.0.4",
+    "fast-glob": "^3.2.7",
+    "inflight": "^1.0.6",
+    "ignore": "^5.1.8",
+    "glob-parent": "^5.1.2",
+    "is-glob": "^4.0.1",
+    "is-path-inside": "^3.0.3",
+    "js-tokens": "^4.0.0",
+    "glob": "^7.1.7",
+    "is-path-cwd": "^2.2.0",
+    "is-number": "^7.0.0",
+    "is-extglob": "^2.1.1",
+    "once": "^1.4.0",
+    "minimatch": "^3.0.4",
+    "micromatch": "^4.0.4",
+    "merge2": "^1.4.1",
+    "p-map": "^3.0.0",
+    "path-is-absolute": "^1.0.1",
+    "path-type": "^4.0.0",
+    "picomatch": "^2.3.0",
+    "react-is": "^16.13.1",
     "prop-types": "^15.7.2",
+    "queue-microtask": "^1.2.3",
+    "rimraf": "^3.0.2",
+    "slash": "^3.0.0",
+    "object-assign": "^4.1.1",
+    "wrappy": "^1.0.2",
+    "run-parallel": "^1.2.0",
+    "reusify": "^1.0.4",
+    "to-regex-range": "^5.0.1",
+    "loose-envify": "^1.4.0"
+  },
+  "peerDependencies": {
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "prop-types": "^15.7.2",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {
     "rollup": "^2.53.1",
     "rollup-plugin-delete": "^2.0.0"
-  }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build-watch": "rollup -c -w"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwood1/daves-react-component-library.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwood1/daves-react-component-library/issues"
+  },
+  "homepage": "https://github.com/dwood1/daves-react-component-library#readme"
 }

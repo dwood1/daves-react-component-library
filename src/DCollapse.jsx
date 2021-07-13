@@ -8,7 +8,6 @@ const DCollapse = (props) => {
   const { id, children, header } = props;
   const dcollapseViewId = `${id}_dcollapse_view`;
   const {
-    toggleCollapse,
     onCollapseToggleClicked,
     collapseViewOpen,
     collapseViewHeight,
@@ -18,11 +17,12 @@ const DCollapse = (props) => {
   return (
     <div className="dcollapse-container">
       <div
-        className="dcollapse-toggle-container border clickable-black"
+        className="dcollapse-toggle-container clickable-black"
         onClick={onCollapseToggleClicked}>
         <i
-          className={`fa fa-caret-right fa-lg mx-3`}
+          className={`fa fa-caret-right fa-lg`}
           style={{
+            marginRight: "1rem",
             transition: "transform 300ms",
             transform: collapseViewOpen ? "rotate(90deg)" : "rotate(0deg)",
           }}
