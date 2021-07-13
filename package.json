@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "prop-types": "^15.7.2",
+    "rollup": "^2.53.1",
+    "rollup-plugin-delete": "^2.0.0"
+  }
+}
